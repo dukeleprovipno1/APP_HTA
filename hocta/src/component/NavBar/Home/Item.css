@@ -1,0 +1,27 @@
+.btn-item {
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid black; /* Viền đen cho nút */
+    font-family: Arial, sans-serif; /* Đặt font chữ */
+    text-align: left; /* Căn lề trái */
+}
+
+.btn-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+}
+
+.shadow-sm {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng mờ nhẹ */
+}
+
+.text-dark {
+    color: #333; /* Màu tối hơn cho tiêu đề */
+}

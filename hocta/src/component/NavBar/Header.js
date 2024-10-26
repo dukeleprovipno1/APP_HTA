@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Link } from 'react-router-dom'; // Import Link từ react-router-dom
 import logo from '../../img/1.png';
 
 export default class Header extends Component {
@@ -13,7 +13,6 @@ export default class Header extends Component {
                             alt="Logo" 
                             style={{ width: '100px', height: '100px', marginRight: '10px', marginLeft: '10px' }} 
                         />
-                        {/* Đường kẻ dọc */}
                         <div style={{ borderRight: '6px solid white', height: '100%', marginRight: '10px' }}></div>
                         <button 
                             className="navbar-toggler" 
@@ -28,13 +27,13 @@ export default class Header extends Component {
                         </button>
                         <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                             <ul className="navbar-nav mb-2 mb-lg-0">
-                                <li className="nav-item"><a className="nav-link active" aria-current="page" href="#!">Home</a></li>
+                                <li className="nav-item"><Link className="nav-link"  to="/home">Home</Link></li>
                                 <li className="nav-item"><a className="nav-link" href="#!">About</a></li>
                                 <li className="nav-item"><a className="nav-link" href="#!">Contact</a></li>
                                 {/* Nút Đăng nhập */}
-                                <li className="nav-item"><a className="nav-link" href="#!">Đăng nhập</a></li>
-                                {/* Nút Đăng ký */}
-                                <li className="nav-item"><a className="nav-link" href="Account/Register">Đăng ký</a></li>
+                                <li className="nav-item"><Link className="nav-link" to="/login">Đăng nhập</Link></li>
+                                {/* Nút Đăng ký - sử dụng Link */}
+                                <li className="nav-item"><Link className="nav-link" to="/register">Đăng ký</Link></li>
                             </ul>
                         </div>
                     </div>

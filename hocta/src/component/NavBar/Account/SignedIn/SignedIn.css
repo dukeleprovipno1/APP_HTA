@@ -1,0 +1,79 @@
+.profile-box {
+    position: fixed;
+    top: 70px; /* Căn chỉnh từ đỉnh trang */
+    right: 20px; /* Căn chỉnh từ bên phải trang */
+    background-color: #1c1e21;
+    color: #e4e6eb;
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Đảm bảo hiển thị lên trên cùng */
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.profile-info h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.profile-link {
+    color: #1877f2;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.profile-options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-options li {
+    margin: 15px 0;
+}
+
+.profile-options a {
+    color: #e4e6eb;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+}
+
+.profile-options a:hover {
+    color: #ffffff;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.search-input {
+    width: 160px;
+    height: 30px;
+    border-radius: 15px;
+    padding-left: 10px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.btn-outline-light.btn-sm {
+    padding: 0 10px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 1.2;
+    border-radius: 15px;
+}
